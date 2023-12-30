@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
+  font-family: poppins;
 }
 
 body {
   min-width: 100vw;
   max-width: 1920px;
-  margin:0;
+  margin: 0;
   background: #f2f2f2;
 
   /* padding: 0 3px; */
@@ -25,6 +26,8 @@ header {
   align-items: center;
 
   max-width: 1920px;
+  padding: 0 7%;
+  justify-content: space-between;
 }
 header nav {
   display: flex;
@@ -54,8 +57,7 @@ header li {
   align-self: flex-end;
   list-style-type: none;
 }
-header nav a { 
-
+header nav a {
   text-decoration: none;
   margin: 0 48px;
   color: rgba(0, 0, 0, 0.9);
@@ -66,13 +68,12 @@ header nav a {
   line-height: normal;
   border-bottom: 2px solid transparent;
   padding-bottom: 3px;
-  
 }
 
 header nav a:hover {
   border-bottom: 2px solid green;
 }
-  
+
 header .search-bar {
   justify-content: center;
   align-items: center;
@@ -94,13 +95,15 @@ main {
 }
 .filter-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+
   gap: 20px;
   padding: 0 7%;
 }
 .filter {
   max-width: 395px;
   padding: 30px;
+  min-width: 30%;
   flex-shrink: 0;
   border-radius: 24px;
   background: #f8f8f8;
@@ -185,11 +188,11 @@ input[type="checkbox"] {
 }
 
 .search-bg-image {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  min-width: 70%;
   max-width: 1225px;
   height: 751px;
 
@@ -213,7 +216,7 @@ input[type="checkbox"] {
   line-height: normal;
 }
 .search-bg-image h1 {
-    padding: 20px;
+  padding: 20px;
   color: rgba(0, 0, 0, 0.8);
   font-family: Poppins;
   font-size: 48px;
@@ -221,12 +224,11 @@ input[type="checkbox"] {
   font-weight: 600;
   line-height: normal;
 }
-.search-bg-image form{
-    position: relative;
-    width: 324px;
+.search-bg-image form {
+  position: relative;
+  width: 324px;
 }
 .filter-input-search {
-    
   width: 324px;
   height: 48px;
   flex-shrink: 0;
@@ -239,13 +241,168 @@ input[type="checkbox"] {
   padding: 0 15px;
 }
 input[type="search"]::-webkit-search-decoration {
-    display: none;
-  }
+  display: none;
+}
 
-.search-icon{
-    position: absolute;
-    right: 5%;
-    top: 30%;
+.search-icon {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+main > h2 {
+  padding: 0 14%;
+}
+
+.ads-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  
+}
+
+.ad {
+  max-width: 395px;
+  height: 424px;
+  position: relative;
+  max-height: 500px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #f8f8f8;
+  box-shadow: 0px 4px 18px 0px rgba(194, 194, 194, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.ad > h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-weight: bold;
+
+  padding-left: 4%;
+}
+
+.ad-img {
+  max-width: 363px;
+  height: 202px;
+  flex-shrink: 0;
+  /* width: 95%; */
+  align-self: center;
+  padding: 16px;
+}
+.ad > p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+  padding-left: 4%;
+}
+.ad > p:nth-last-child() {
+  color: red;
+}
+.ad > .dollar {
+  padding-right: 4%;
+  margin: 0;
+  opacity: 1;
+  color: #29b24e;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.ad > .dollar span {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.ad > div {
+  height: 20%;
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #cfead6;
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+
+.ads-container > h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ads-container {
+  padding: 0 7%;
+}
+
+.ad .vip-mark {
+  
+  left: 10%;
+  top: 7%;
+  position: absolute;
+  width: 76px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #29b24e;
+  border-top: unset;
+}
+.ad .vip-mark p{
+  
+  padding: 0;
+  margin-top: -32%;
+  color: #FFF;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.ad .bookmark-wrapper{
+  display: flex;
+  justify-content: center;
+  right: 10%;
+  top: 39%;
+  position: absolute;
+  width: 40px;
+height: 40px;
+flex-shrink: 0;
+background-color: #FFF;
+filter: drop-shadow(-2px 4px 20px rgba(109, 109, 109, 0.25));
+border-radius: 50%;
+}
+.ad .bookmark-wrapper > svg{
+  margin-top: -45%;
+}
+@media (max-width: 1625px) {
+  .ads-grid {
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -273,21 +430,21 @@ input[type="search"]::-webkit-search-decoration {
   .filter-input-search {
     display: none;
   }
-  .search-bg-image h1{
+  .search-bg-image h1 {
     padding: 0;
     width: 245px;
   }
-  .search-icon{
+  .search-icon {
     display: none;
   }
-  .filter{
+  .filter {
     min-width: 100%;
   }
   .search-bg-image {
     margin: 0 auto;
     min-width: 100vw;
     max-width: 100vw;
-   
+
     height: 435px;
     flex-shrink: 0;
     background-image: url(./images/city-view-sm.png);
@@ -299,21 +456,18 @@ input[type="search"]::-webkit-search-decoration {
   header .sell-something-anchor {
     display: none;
   }
- 
-  .search-bg-image h1{
-    color: rgba(0, 0, 0, 0.80);
+
+  .search-bg-image h1 {
+    color: rgba(0, 0, 0, 0.8);
     text-align: center;
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
-
-}
-.search-bg-image p{
-    
-    color: rgba(0, 0, 0, 0.80);
+  }
+  .search-bg-image p {
+    color: rgba(0, 0, 0, 0.8);
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -321,6 +475,11 @@ input[type="search"]::-webkit-search-decoration {
     line-height: normal;
     opacity: 0.8;
   }
-
-
+  .ads-grid {
+    grid-template-columns: 1fr;
+  }
+  .ads-container > h2 {
+    font-weight: bold;
+    margin-left: 5%;
+  }
 }

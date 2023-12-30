@@ -425,7 +425,7 @@ border-radius: 50%;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 7px;
   }
   .filter-input-search {
     display: none;
@@ -477,6 +477,16 @@ border-radius: 50%;
   }
   .ads-grid {
     grid-template-columns: 1fr;
+  }
+  .ads-container{
+    padding: 0;
+  }
+  .ad{
+    width: 100%;
+  }
+  .ad img{
+    /* padding: 20px ; */
+    width: 100%;
   }
   .ads-container > h2 {
     font-weight: bold;

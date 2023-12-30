@@ -425,7 +425,7 @@ border-radius: 50%;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    padding: 7px;
+    padding: 0;
   }
   .filter-input-search {
     display: none;

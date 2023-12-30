@@ -54,7 +54,8 @@ header li {
   align-self: flex-end;
   list-style-type: none;
 }
-header a {
+header nav a { 
+
   text-decoration: none;
   margin: 0 48px;
   color: rgba(0, 0, 0, 0.9);
@@ -71,7 +72,7 @@ header a {
 header nav a:hover {
   border-bottom: 2px solid green;
 }
-
+  
 header .search-bar {
   justify-content: center;
   align-items: center;

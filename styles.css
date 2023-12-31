@@ -261,7 +261,7 @@ main > h2 {
 .ads-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   
 }
@@ -401,6 +401,72 @@ border-radius: 50%;
 .ad .bookmark-wrapper > svg{
   margin-top: -45%;
 }
+
+
+footer{
+  padding: 0 7%;
+  max-width: 1920px;
+/* height: 179px; */
+flex-shrink: 0;
+border-radius: 25px;
+background: #29B24E;
+box-shadow: 0px 4px 25px 0px rgba(194, 194, 194, 0.10);
+margin-top: 120px;
+margin-left: auto;
+margin-right: auto;
+}
+
+footer ul{
+  list-style-type: none;
+  display: flex;
+  gap: 48px;
+  
+}
+footer a{
+  white-space: nowrap;
+  text-decoration: none;
+  color: #FFF;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+footer a:hover{
+  border-bottom: 2px solid white;
+}
+.footer-first-half{
+  padding-bottom: 10px;
+  margin-top:25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #D0D0D0;
+}
+.footer-first-half p{
+  color: #FFF;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.pc-footer{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pc-footer >p{
+
+  margin-top: 40px;
+  text-align: center;
+  color: #FFF;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 @media (max-width: 1625px) {
   .ads-grid {
     justify-items: center;
@@ -527,4 +593,24 @@ border-radius: 50%;
     font-weight: bold;
     margin-left: 5%;
   }
+  .footer-first-half{
+    
+  }
+
+.footer-first-half p{
+  display: none;
+}
+  
+  footer ul{
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 0;
+
+  }
+
+  footer li{
+    padding-left: 0;
+  }
+
+  
 }

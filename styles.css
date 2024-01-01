@@ -361,6 +361,10 @@ main > h2 {
   padding: 0 7%;
 }
 
+main > a{
+  text-decoration: none;
+}
+
 .ad .vip-mark {
   left: 10%;
   top: 7%;

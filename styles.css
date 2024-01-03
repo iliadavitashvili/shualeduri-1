@@ -662,6 +662,14 @@ background: #29B24E;
 color: white;
 border: 1px solid transparent;
 }
+
+.second-page  .ads-grid{
+  grid-template-rows:1fr ;
+}
+.second-page .ads-container{
+  padding: 0;
+  
+}
 @media (max-width: 1625px) {
   .villa-container > img {
     width: 100%;
@@ -685,8 +693,21 @@ border: 1px solid transparent;
 }
 
 @media (max-width: 1024px) {
+ 
+  .second-page .ads-container >h2{
+    margin-top: 40px;
+  }
+  .second-page > .ads-grid{
+    display: block;
+  }
+  .ad-2,.ad-3,.ad-4{
+    display: none;
+  }
   .villa-footer{
     flex-direction: column;
+  }
+  .pc-footer{
+    margin-top: 70px;
   }
   .buttons-wrapper{
     flex-direction: column-reverse;
@@ -825,6 +846,7 @@ border: 1px solid transparent;
   }
   .ads-container {
     padding: 0;
+    
   }
   .ad {
     width: 100%;

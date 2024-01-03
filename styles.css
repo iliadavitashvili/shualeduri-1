@@ -366,6 +366,9 @@ main > a {
 }
 
 .ad .vip-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 10%;
   top: 7%;
   position: absolute;
@@ -377,8 +380,11 @@ main > a {
   border-top: unset;
 }
 .ad .vip-mark p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
-  margin-top: -32%;
+  margin-top: -21%;
   color: #fff;
   font-family: Poppins;
   font-size: 12px;
@@ -693,7 +699,7 @@ border: 1px solid transparent;
 }
 
 @media (max-width: 1024px) {
- 
+  
   .second-page .ads-container >h2{
     margin-top: 40px;
   }

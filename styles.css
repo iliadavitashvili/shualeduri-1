@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: poppins;
+  
 }
 
 body {
@@ -99,12 +100,12 @@ main {
 
   gap: 20px; */
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2fr 4.5fr;
   gap: 20px;
   padding: 0 7%;
 }
 .filter {
-  max-width: 395px;
+  /* max-width: 395px; */
   padding: 0;
   padding-left: 20px;
   min-width: 30%;

@@ -684,11 +684,11 @@ border: 1px solid transparent;
   .villa-container {
     grid-template-columns: 1fr;
   }
-  .ads-grid {
+  /* .ads-grid {
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-  }
+  } */
   .ad-img {
     width: 100%;
   }

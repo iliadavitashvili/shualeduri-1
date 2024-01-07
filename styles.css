@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: poppins;
   
+  
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   max-width: 1920px;
   margin: 0;
   background: #f2f2f2;
+  overflow-x: hidden;
 
 }
 
@@ -26,7 +28,7 @@ header {
   align-items: center;
 
   max-width: 1920px;
-  padding: 0 7%;
+  padding: 0 3%;
   justify-content: space-between;
 }
 header nav {
@@ -96,9 +98,9 @@ main {
 .filter-container {
 
   display: grid;
-  grid-template-columns: 2fr 4.5fr;
+  grid-template-columns: 1fr 3fr;
   gap: 20px;
-  padding: 0 7%;
+  padding: 0 3%;
 }
 .filter {
   padding: 0;
@@ -117,13 +119,14 @@ main {
 .filter h2 {
   color: #000;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   align-self: start;
   font-weight: bold;
 }
+
 
 .filter > select {
   display: flex;
@@ -157,6 +160,7 @@ main {
   align-items: center;
 }
 .checkbox-wrapper label {
+  font-size: 14px;
   color: #000;
   font-family: Poppins;
   font-style: normal;
@@ -351,7 +355,7 @@ main > h2 {
 }
 
 .ads-container {
-  padding: 0 7%;
+  padding: 0 3%;
 }
 
 main > a {
@@ -403,7 +407,7 @@ main > a {
 }
 
 .pc-footer {
-  padding: 0 7%;
+  padding: 0 3%;
   
   max-width: 1920px;
   flex-shrink: 0;
@@ -468,7 +472,7 @@ footer a:hover {
   display: none;
 }
 .second-page {
-  padding: 0 6%;
+  padding: 0 3%;
 }
 .villa-container {
   display: grid;
@@ -529,9 +533,10 @@ footer a:hover {
   line-height: 23px; /* 191.667% */
 }
 .villa-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height:732px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
   border-radius: 24px;
   background: #f8f8f8;
   box-shadow: 0px 4px 18px 0px rgba(194, 194, 194, 0.3);
@@ -756,7 +761,7 @@ border: 1px solid transparent;
   .villa-description {
     height: 100%;
     row-gap: 0;
-    padding: 10px 20px;
+    padding: 10px 20px;  
   }
   .villa-body > span,
   .villa-body > p {

@@ -109,6 +109,7 @@ main {
 .filter {
   padding: 0;
   padding:0 20px;
+  max-width: 395px;
   flex-shrink: 0;
   border-radius: 24px;
   background: #f8f8f8;
@@ -116,6 +117,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+ 
   padding-bottom: 0;
 }
 
@@ -157,13 +159,15 @@ main {
 }
 
 .checkbox-wrapper {
+  
   display: flex;
-  margin: 5px 0;
+  margin: 15px 0;
   gap: 12px;
   align-items: center;
   white-space: nowrap;
 }
 .checkbox-wrapper label {
+  
   font-size: 14px;
   color: #000;
   font-family: Poppins;
@@ -197,8 +201,8 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 70%;
-  max-width: 1225px;
+  /* min-width: 70%; */
+  max-width: 97%;
   height: 751px;
 
   flex-shrink: 0;
@@ -210,6 +214,12 @@ input[type="checkbox"] {
     ),
     url(./images/city-view.png), lightgray 50% / contain no-repeat;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width:1750px){
+  .search-bg-image{
+    max-width: 100%;
+  }
 }
 
 .search-bg-image p {
@@ -268,7 +278,7 @@ main > h2 {
 
 .ad {
   max-width: 395px;
-  height: 424px;
+  /* height: 424px; */
   position: relative;
   max-height: 500px;
   flex-shrink: 0;
@@ -833,7 +843,7 @@ border: 1px solid transparent;
   }
   .filter {
     order: 1;
-    min-width: 100%;
+    /* min-width: 100%; */
   }
   .search-bg-image {
     margin: 0 auto;
